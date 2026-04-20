@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@theme {
+    --color-primary: #7B5556;
+    --font-inter: 'Inter', sans-serif;
+}
+
+@layer base{
+    body{
+        background-color: #F3F4F4;
+        font-family: var(--font-inter);
+    }
+    a{
+        color: var(--color-texta);
+        cursor: pointer;
+       
+    }
+}
