@@ -20,26 +20,33 @@
 <body>
     <header class="container mx-auto">
         <div class="flex items-center justify-between py-4.5 px-4">
-            <div class="logo"><h1>Taste</h1></div>
-            <div class="list">
-                <ul>
+            <div class="menu sm:hidden">
+                <a href="#"><img src="./assets/img/header/menu.svg" alt="menu"></a>
+            </div>
+
+            <div class="logo"><a class="uppercase text-xl text-primary">Taste</a></div>
+            <div class="profile_photo sm:hidden">
+                <a href="#"><img src="./assets/img/header/profile.png" alt="profile"></a>
+            </div>
+            <div class="list max-sm:hidden">
+                <ul class="flex justify-center items-center gap-6">
                     <li>
-                        <a href="#">Menu</a>
+                        <a href="#" class="nav-link">Menu</a>
                     </li>
                     <li>
-                        <a href="#">Wishlist</a>
+                        <a href="#" class="nav-link">Wishlist</a>
                     </li>
                     <li>
-                        <a href="#">Orders</a>
+                        <a href="#" class="nav-link">Orders</a>
                     </li>
                     <li>
-                        <a href="#">Account</a>
+                        <a href="#" class="nav-link">Account</a>
                     </li>
                 </ul>
             </div>
-            <div class="icon"> 
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
+            <div class="icon flex items-center gap-4 max-sm:hidden"> 
+              <a href="#"><img src="./assets/img/header/search.svg" alt="search"></a> 
+               <a href="#"><img src="./assets/img/header/bag-shopping.svg" alt="shopping bag"></a>
             </div>
         </div>
 

@@ -1,12 +1,13 @@
 @import "tailwindcss";
 @theme {
-    --color-primary: #7B5556;
+    --color-primary: #2C3E50;
+    --color-secondary: #475569;
+    --color-hover: #0F172A; 
     --font-inter: 'Inter', sans-serif;
 }
 
 @layer base{
     body{
-        background-color: #F3F4F4;
         font-family: var(--font-inter);
     }
     a{
@@ -14,4 +15,7 @@
         cursor: pointer;
        
     }
+}
+@utility nav-link {
+    @apply text-secondary hover:text-hover duration-300 decoration-2 hover:underline underline-offset-4 transition-all;
 }
