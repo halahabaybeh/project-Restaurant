@@ -1,21 +1,41 @@
 @import "tailwindcss";
+
 @theme {
     --color-primary: #2C3E50;
     --color-secondary: #475569;
-    --color-hover: #0F172A; 
+    --color-hover: #0F172A;
+    --color-gray-border: #CBD5E1;
+    --text-size-base: 16px;
     --font-inter: 'Inter', sans-serif;
+    --breakpoint-sm: 480px;
+    --container-max-width: 100%;
+    --breakpoint-container: 1400px;
 }
 
-@layer base{
-    body{
+@layer base {
+    body {
         font-family: var(--font-inter);
     }
-    a{
-        color: var(--color-texta);
+
+    a {
         cursor: pointer;
-       
     }
 }
-@utility nav-link {
-    @apply text-secondary hover:text-hover duration-300 decoration-2 hover:underline underline-offset-4 transition-all;
+
+@layer components {
+    .container {
+        @apply mx-auto w-full px-4 sm:px-6 lg:px-8; 
+    }
+
+    .nav-link {
+        @apply text-secondary hover:text-hover duration-300 decoration-2 hover:underline underline-offset-4 transition-all;
+    }
+
+    .btn-primary {
+        @apply py-3.5 px-6 bg-primary text-white rounded-lg border border-primary transition-all hover:bg-transparent hover:text-primary;
+    }
+
+    .btn-secondary {
+        @apply py-3.5 px-6 border-gray-border text-secondary rounded-lg border transition-all hover:bg-gray-100;
+    }
 }

@@ -18,8 +18,8 @@
 </head>
 
 <body>
-    <header class="container mx-auto">
-        <div class="flex items-center justify-between py-4.5 px-4">
+    <header class="border-b border-gray-border">
+        <div class="container flex items-center justify-between py-4.5">
             <div class="menu sm:hidden">
                 <a href="#"><img src="./assets/img/header/menu.svg" alt="menu"></a>
             </div>
@@ -44,13 +44,31 @@
                     </li>
                 </ul>
             </div>
-            <div class="icon flex items-center gap-4 max-sm:hidden"> 
-              <a href="#"><img src="./assets/img/header/search.svg" alt="search"></a> 
-               <a href="#"><img src="./assets/img/header/bag-shopping.svg" alt="shopping bag"></a>
+            <div class="icon flex items-center gap-4 max-sm:hidden">
+                <a href="#"><img src="./assets/img/header/search.svg" alt="search"></a>
+                <a href="#"><img src="./assets/img/header/bag-shopping.svg" alt="shopping bag"></a>
             </div>
         </div>
 
     </header>
+    <section class="hero container min-h-[calc(100vh-70px)] grid grid-cols-2  items-center">
+
+        <div class="details-hero flex flex-col gap-4 ">
+            <p class="uppercase text-primary text-sm font-inter">University Course Project</p>
+            <h2 class="font-inter text-hover text-5xl ">Experience the taste of perfection</h2>
+            <p class="font-inter text-secondary text-lg">A curated digital menu featuring the finest ingredients and culinary techniques.</p>
+            <div class="btn flex gap-4">
+                <a href="#" class="btn-primary">View Menu</a>
+                <a href="#" class="btn-secondary sm:hidden">Book a Table</a>
+            </div>
+        </div>
+        <div class="img-hero flex justify-end items-center ">
+            <img src="./assets/img/hero/Gourmetdish.png" alt="img" class=" sm:hidden md:block" />
+            <img src="./assets/img/hero/Artisandish.png" alt="img" class="hidden sm:block md:hidden" />
+        </div>
+
+
+    </section>
 
 </body>
 
