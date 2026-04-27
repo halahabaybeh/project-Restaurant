@@ -7,6 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-950: oklch(27.9% 0.077 45.635);
+    --color-indigo-800: oklch(39.8% 0.195 277.366);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -16,8 +19,6 @@
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --radius-lg: 0.5rem;
@@ -181,6 +182,12 @@
   }
 }
 @layer utilities {
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
   .container {
     width: 100%;
     @media (width >= 480px) {
@@ -214,8 +221,17 @@
   .table {
     display: table;
   }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-full {
+    height: 100%;
+  }
   .min-h-\[calc\(100vh-70px\)\] {
     min-height: calc(100vh - 70px);
+  }
+  .w-full {
+    width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -247,6 +263,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -258,11 +277,35 @@
   .border-gray-border {
     border-color: var(--color-gray-border);
   }
+  .bg-\[ur\] {
+    background-color: ur;
+  }
+  .bg-\[url\(\.\/assets\/img\/hero\/Gourmetdish\.png\)\] {
+    background-image: url(./assets/img/hero/Gourmetdish.png);
+  }
+  .bg-\[url\(\.\/assets\/img\/hero\/Gourmetdish2\.png\)\] {
+    background-image: url(./assets/img/hero/Gourmetdish2.png);
+  }
+  .bg-\[url\(\/img\/mountains\.jpg\)\] {
+    background-image: url(/img/mountains.jpg);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
   .py-4\.5 {
     padding-block: calc(var(--spacing) * 4.5);
+  }
+  .py-9 {
+    padding-block: calc(var(--spacing) * 9);
   }
   .font-inter {
     font-family: var(--font-inter);
@@ -302,9 +345,29 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .max-sm\:order-1 {
+    @media (width < 480px) {
+      order: 1;
+    }
+  }
+  .max-sm\:order-2 {
+    @media (width < 480px) {
+      order: 2;
+    }
+  }
   .max-sm\:hidden {
     @media (width < 480px) {
       display: none;
+    }
+  }
+  .max-sm\:h-\[300px\] {
+    @media (width < 480px) {
+      height: 300px;
+    }
+  }
+  .max-sm\:grid-cols-1 {
+    @media (width < 480px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
   .sm\:block {
@@ -317,19 +380,6 @@
       display: none;
     }
   }
-  .sm\:text-4xl {
-    @media (width >= 480px) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-  }
-  .max-sm\:sm\:hidden {
-    @media (width < 480px) {
-      @media (width >= 480px) {
-        display: none;
-      }
-    }
-  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -338,12 +388,6 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
-    }
-  }
-  .md\:text-5xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
 }
@@ -358,14 +402,7 @@
 @layer components {
   .container {
     margin-inline: auto;
-    width: 100%;
     padding-inline: calc(var(--spacing) * 4);
-    @media (width >= 480px) {
-      padding-inline: calc(var(--spacing) * 6);
-    }
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 8);
-    }
   }
   .nav-link {
     color: var(--color-secondary);
