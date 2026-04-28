@@ -5,6 +5,7 @@
     --color-secondary: #475569;
     --color-hover: #0F172A;
     --color-gray-border: #CBD5E1;
+    --color-bg-section: #F8FAFC;
     --text-size-base: 16px;
     --font-inter: 'Inter', sans-serif;
     --breakpoint-sm: 480px;
@@ -32,10 +33,16 @@
     }
 
     .btn-primary {
-        @apply py-3.5 px-6 bg-primary text-white rounded-lg border border-primary transition-all hover:bg-transparent hover:text-primary;
+        @apply py-3.5 max-sm:py-2 px-6 max-sm:px-4 bg-primary text-white rounded-lg border border-primary transition-all hover:bg-transparent hover:text-primary;
     }
 
     .btn-secondary {
-        @apply py-3.5 px-6 border-gray-border text-secondary rounded-lg border transition-all hover:bg-gray-100;
+        @apply py-3.5 max-sm:py-2 px-6 max-sm:px-4 border-gray-border text-secondary rounded-lg border transition-all hover:bg-gray-100;
+    }
+    .categories{
+        @apply gap-6 max-sm:gap-3 grid max-sm:flex max-sm:flex-nowrap max-sm:overflow-x-auto sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4;
+    }
+    .card-categories {
+        @apply  rounded-2xl border border-gray-border flex flex-col justify-end items-start gap-2 max-sm:min-w-35 max-sm:max-w-35 max-sm:shrink-0 ;
     }
 }
