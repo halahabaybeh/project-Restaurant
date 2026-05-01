@@ -6,6 +6,8 @@
     --color-hover: #0F172A;
     --color-gray-border: #CBD5E1;
     --color-bg-section: #F8FAFC;
+    --color-bg-button: #F1F5F9;
+    --color-hoverbtn:#64748B;
     --text-size-base: 16px;
     --font-inter: 'Inter', sans-serif;
     --breakpoint-sm: 480px;
@@ -33,7 +35,7 @@
     }
 
     .btn-primary {
-        @apply py-3.5 max-sm:py-2 px-6 max-sm:px-4 bg-primary text-white rounded-lg border border-primary transition-all hover:bg-transparent hover:text-primary;
+        @apply py-3.5 max-sm:py-2 px-6 max-sm:px-4 bg-primary text-white rounded-lg border border-primary transition-all  hover:bg-transparent hover:text-primary;
     }
 
     .btn-secondary {
