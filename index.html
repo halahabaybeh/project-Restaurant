@@ -51,19 +51,18 @@
         </div>
 
     </header>
-    <section
-        class="hero container min-h-[calc(100vh-70px)] grid grid-cols-2 max-sm:grid-cols-1 items-center py-9">
+    <section class="hero container min-h-[calc(100vh-70px)] grid grid-cols-2 max-sm:grid-cols-1 items-center py-9">
 
         <div class=" details-hero flex flex-col gap-4 max-sm:order-2 ">
             <p class=" uppercase text-primary text-sm font-inter">University Course Project</p>
-        <h2 class="font-inter text-hover text-5xl max-sm:text-3xl">Experience the taste of perfection</h2>
-        <p class="font-inter text-secondary text-lg max-sm:text-sm">A curated digital menu featuring the finest
-            ingredients and
-            culinary techniques.</p>
-        <div class="btn flex gap-4">
-            <a href="#" class="btn-primary">View Menu</a>
-            <a href="#" class="btn-secondary max-sm:hidden sm:hidden md:block">Book a Table</a>
-        </div>
+            <h2 class="font-inter text-hover text-5xl max-sm:text-3xl">Experience the taste of perfection</h2>
+            <p class="font-inter text-secondary text-lg max-sm:text-sm">A curated digital menu featuring the finest
+                ingredients and
+                culinary techniques.</p>
+            <div class="btn flex gap-4">
+                <a href="#" class="btn-primary">View Menu</a>
+                <a href="#" class="btn-secondary max-sm:hidden sm:hidden md:block">Book a Table</a>
+            </div>
         </div>
         <div class="img-hero flex justify-end items-center max-sm:order-1">
             <img src="./assets/img/hero/Gourmetdish.png" alt="img" class=" sm:hidden md:block " />
@@ -125,23 +124,25 @@
         </div>
     </section>
     <section class="populer-dishes bg-white container py-10">
-        <div class="dishes flex flex-col gap-8">
+        <div class="dishes flex flex-col max-sm:gap-5 gap-8">
             <div class="heading-dishes flex items-center justify-between">
                 <h3 class="text-2xl max-sm:text-lg text-hover">Popular Dishes</h3>
-                 <a href="#"
+                <a href="#"
                     class="text-sm max-sm:text-xs text-primary hover:text-hover transition-all duration-300 uppercase md:hidden">View
                     All</a>
             </div>
-            <div class="dishes-card grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3  sm:gap-6 md:gap-8">
+            <div
+                class="dishes-card grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3  max-sm:gap-4 sm:gap-6 md:gap-8">
                 <div class="card-dish flex flex-col gap-2 border border-gray-border rounded-xl p-4">
                     <div class="img-card-dish ">
                         <img src="./assets/img/dishes/Risotto.png" alt="risotto"
                             class="rounded-xl w-full object-cover" />
                     </div>
-                    <div class="details-card-dish flex flex-col gap-4 flex-1">
-                        <h4 class="flex justify-between gap-0.5 text-hover max-sm:text-sm sm:text-sm md:text-lg">Wild Truffle Risotto<span
-                                class="font-bold max-sm:text-sm">$32.00</span></h4>
-                        <p class="text-secondary text-sm max-sm:text-xs w-4/5 flex-wrap">A rich, creamy Italian classic with seasonal truffles.
+                    <div class="details-card-dish flex flex-col gap-4">
+                        <h4 class="flex justify-between gap-0.5 text-hover max-sm:text-sm sm:text-sm md:text-lg">Wild
+                            Truffle Risotto<span class="font-bold max-sm:text-sm">$32.00</span></h4>
+                        <p class="text-secondary text-sm max-sm:text-xs w-4/5 flex-wrap">A rich, creamy Italian classic
+                            with seasonal truffles.
                         </p>
                         <a href="#"
                             class="bg-bg-button mt-auto text-center py-2 text-sm max-sm:text-xs text-primary rounded-lg hover:shadow-md transition-shadow duration-300">Add
@@ -152,10 +153,11 @@
                     <div class="img-card-dish">
                         <img src="./assets/img/dishes/Pizza.png" alt="pizza" class="rounded-xl w-full object-cover" />
                     </div>
-                    <div class="details-card-dish flex flex-col gap-4 flex-1">
-                        <h4 class="flex justify-between gap-0.5 text-hover max-sm:text-sm sm:text-sm md:text-lg">Neapolitan Classic<span
-                                class="font-bold max-sm:text-sm">$24.00</span></h4>
-                        <p class="text-secondary text-sm max-sm:text-xs w-4/5">Traditional wood-fired pizza with fresh basil and
+                    <div class="details-card-dish flex flex-col gap-4">
+                        <h4 class="flex justify-between gap-0.5 text-hover max-sm:text-sm sm:text-sm md:text-lg">
+                            Neapolitan Classic<span class="font-bold max-sm:text-sm">$24.00</span></h4>
+                        <p class="text-secondary max-sm:text-xs text-sm w-4/5">Traditional wood-fired pizza with fresh
+                            basil and
                             mozzarella.
                         </p>
                         <a href="#"
@@ -169,16 +171,100 @@
                             class="rounded-xl w-full object-cover" />
                     </div>
                     <div class="details-card-dish flex flex-col gap-4 flex-1">
-                        <h4 class="flex justify-between gap-0.5 text-hover max-sm:text-sm sm:text-sm md:text-lg">Heritage Beef Tartare<span
-                                class="font-bold max-sm:text-sm">$28.00</span></h4>
-                        <p class="text-secondary text-sm max-sm:text-xs w-4/5">Hand-cut premium beef with capers and quail egg.</p>
+                        <h4 class="flex justify-between gap-0.5 text-hover max-sm:text-sm sm:text-sm md:text-lg">
+                            Heritage Beef Tartare<span class="font-bold max-sm:text-sm">$28.00</span></h4>
+                        <p class="text-secondary max-sm:text-xs text-sm w-4/5">Hand-cut premium beef with capers and
+                            quail egg.</p>
                         <a href="#"
-                            class="bg-bg-button mt-auto text-center py-2 text-sm max-sm:text-xs text-primary rounded-lg hover:shadow-md transition-shadow duration-300">Add To Order</a>
+                            class="bg-bg-button mt-auto text-center py-2 text-sm max-sm:text-xs text-primary rounded-lg hover:shadow-md transition-shadow duration-300">Add
+                            To Order</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="Customer-reviews bg-bg-section py-10">
+        <div class="reviews flex flex-col gap-10 justify-center px-4 container mx-auto sm:max-w-md md:max-w-3xl ">
+            <div class="heading-review">
+                <h3 class="text-2xl max-sm:text-lg text-hover text-center">Customer Reviews</h3>
+            </div>
+            <div
+                class="review-card grid max-sm:grid-cols-1 sm:grid-cols-2 justify-center items-center max-sm:gap-4 sm:gap-6 md:gap-8 ">
+                <div class="card-review bg-white border border-gray-border rounded-lg p-6 flex flex-col gap-4 h-full">
+                    <div class="stars flex gap-1 text-yellow-400 text-sm">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                    </div>
+                    <p class="text-secondary max-sm:text-xs text-sm  flex-wrap">"The food is consistently excellent.
+                        Great presentation and flavors."</p>
+                    <div class="flex justify-between items-end mt-auto">
+                        <p class="text-primary font-semibold">— Julian V.</p>
+                        <span class="text-[10px] text-gray-400 pb-0.5">2 days ago</span>
+                    </div>
+                </div>
+                <div class="card-review bg-white border border-gray-border rounded-lg p-6 flex flex-col gap-4 h-full">
+                    <div class="stars flex gap-1 text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 text-yellow-400">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                    </div>
+                    <p class="text-secondary max-sm:text-xs text-sm  flex-wrap">"Best spot in the district for a quiet
+                        dinner. Highly recommended."</p>
+                    <div class="flex justify-between items-end mt-auto">
+                        <p class="text-primary font-semibold">— Elena R.</p>
+                        <span class="text-[10px] text-gray-400 pb-0.5">5 days ago</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </body>
 
 </html>

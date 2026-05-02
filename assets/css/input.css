@@ -47,4 +47,5 @@
     .card-categories {
         @apply  rounded-2xl border border-gray-border flex flex-col justify-end items-start gap-2 max-sm:min-w-35 max-sm:max-w-35 max-sm:shrink-0 ;
     }
+ 
 }
