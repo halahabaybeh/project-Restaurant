@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -15,12 +16,13 @@
     <link href="./assets/css/input.css" rel="stylesheet">
     <title>Our Menu</title>
 </head>
+
 <body>
-      <header class="border-b border-gray-border">
+    <header class="border-b border-gray-border">
         <div class="container flex items-center justify-between py-4.5">
-         
+
             <div class="logo"><a href="./index.html" class="uppercase text-xl text-primary">Taste</a></div>
-          
+
             <div class="list max-sm:hidden">
                 <ul class="flex justify-center items-center gap-6">
                     <li>
@@ -52,13 +54,173 @@
         <section class="heading-our-menu mt-8 mb-8">
             <div class="container flex flex-col gap-2">
                 <h1 class="max-sm:text-2xl sm:text-3xl md:text-4xl text-hover">Our Menu</h1>
-                <p class="max-sm:text-sm  sm:text-size-base text-secondary">Fresh ingredients, prepared daily. Select your favorite dishes below.</p>
+                <p class="max-sm:text-sm  sm:text-size-base text-secondary">Fresh ingredients, prepared daily. Select
+                    your favorite dishes below.</p>
             </div>
 
         </section>
+        <section
+            class="menu-content container grid max-sm:grid-cols-1 sm:grid-cols-[200px_1fr] md:grid-cols-[256px_1fr] gap-8 mb-20 ">
+            <aside class="sidebar flex flex-col gap-6 w-full divide-y divide-gray-border">
+                <div class="categories-sidebar flex flex-col gap-4">
+                    <h2 class="text-lg text-hoverbtn uppercase">categories</h2>
+                    <ul class="flex flex-col gap-2 mb-6">
+                        <li><a
+                                class="rounded-lg text-a-sidebar hover:text-white hover:bg-hover py-2 px-4 inline-block w-full">All
+                                Items</a></li>
+                        <li><a
+                                class="rounded-lg text-a-sidebar hover:text-white hover:bg-hover py-2 px-4 inline-block w-full">Starters</a>
+                        </li>
+                        <li><a
+                                class="rounded-lg text-a-sidebar hover:text-white hover:bg-hover py-2 px-4 inline-block w-full">Main
+                                Courses</a></li>
+                        <li><a
+                                class="rounded-lg text-a-sidebar hover:text-white hover:bg-hover py-2 px-4 inline-block w-full">Desserts</a>
+                        </li>
+                        <li><a
+                                class="rounded-lg text-a-sidebar hover:text-white hover:bg-hover py-2 px-4 inline-block w-full">Beverages</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="preferences-sidebar flex flex-col gap-4 pt-3">
+                    <h2 class="text-lg text-hoverbtn uppercase">preferences</h2>
+                    <div class="flex flex-col gap-4 mt-4 ">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox"
+                                class=" appearance-none border-2 w-4 h-4 border-gray-border checked:border-primary rounded-md checked:border-4 checked:rounded-full focus:ring-primary transition-all cursor-pointer">
+                            <span class="text-secondary hover:text-hover transition-colors">Vegetarian</span>
+                        </label>
+                         <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="checkbox"
+                                class=" appearance-none border-2 w-4 h-4 border-gray-border checked:border-primary rounded-md checked:border-4 checked:rounded-full focus:ring-primary transition-all cursor-pointer">
+                            <span class="text-secondary hover:text-hover transition-colors">Gluten-Free</span>
+                        </label>
+
+                    </div>
+                </div>
+
+            </aside>
+            <div class="body-menu flex flex-col gap-12">
+                <div class="menu-items grid max-sm:grid-col-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item rounded-xl border border-gray-border flex flex-col shadow-sm w-full">
+                        <img class="rounded-tl-xl rounded-tr-xl object-cover"
+                            src="../assets/img/our-menu/items/BeefTartare.png" alt="beef tartare" />
+                        <div class="flex flex-col gap-2 p-4 flex-1">
+                            <h3
+                                class="flex justify-between max-sm:text-sm sm:text-sm md:gap-1 md:text-size-base text-hover">
+                                <span>Heirloom Salmon Bowl</span>
+                                <span>$24.00</span>
+                            </h3>
+                            <p class="text-sm text-hoverbtn flex-wrap">Fresh salmon with avocado, edamame, and artisan
+                                radishes.</p>
+                            <a href="#"
+                                class="bg-primary text-white py-2 px-4 rounded-lg text-center hover:bg-hover max-sm:text-sm mt-auto">Add
+                                To Cart</a>
+                        </div>
+                    </div>
+                    <div class="menu-item rounded-xl border border-gray-border flex flex-col shadow-sm">
+                        <img class="rounded-tl-xl rounded-tr-xl object-cover"
+                            src="../assets/img/our-menu/items/trufflePizza.png" alt="truffle pizza" />
+                        <div class="flex flex-col gap-2 p-4 flex-1">
+                            <h3
+                                class="flex justify-between max-sm:text-sm sm:text-sm md:gap-1 md:text-size-base text-hover">
+                                <span>Truffle Marguerita</span>
+                                <span>$28.00</span>
+                            </h3>
+                            <p class="text-sm text-hoverbtn">Artisan thin crust with buffalomozzarella
+                                and truffle oil.</p>
+                            <a href="#"
+                                class="bg-primary text-white py-2 px-4 rounded-lg text-center hover:bg-hover max-sm:text-sm mt-auto">Add
+                                To Cart</a>
+                        </div>
+                    </div>
+                    <div class="menu-item rounded-xl border border-gray-border flex flex-col shadow-sm">
+                        <img class="rounded-tl-xl rounded-tr-xl object-cover"
+                            src="../assets/img/our-menu/items/cacaoring.png" alt="velvet cacao ring" />
+                        <div class="flex flex-col gap-2 p-4 flex-1">
+                            <h3
+                                class="flex justify-between max-sm:text-sm sm:text-sm md:gap-1 md:text-size-base text-hover">
+                                <span>Velvet Cacao Ring</span>
+                                <span>$12.00</span>
+                            </h3>
+                            <p class="text-sm text-hoverbtn">Rich dark chocolate ganache donut with
+                                golden sprinkles.</p>
+                            <a href="#"
+                                class="bg-primary text-white py-2 px-4 rounded-lg text-center hover:bg-hover max-sm:text-sm mt-auto">Add
+                                To Cart</a>
+                        </div>
+                    </div>
+                    <div class="menu-item rounded-xl border border-gray-border flex flex-col shadow-sm">
+                        <img class="rounded-tl-xl rounded-tr-xl object-cover"
+                            src="../assets/img/our-menu/items/scallops.png" alt="pacific scallops" />
+                        <div class="flex flex-col gap-2 p-4 flex-1">
+                            <h3
+                                class="flex justify-between max-sm:text-sm sm:text-sm md:gap-1 md:text-size-base text-hover">
+                                <span>Pacific Scallops</span>
+                                <span>$32.00</span>
+                            </h3>
+                            <p class="text-sm text-hoverbtn">Seared scallops served with fresh pea
+                                puree and microgreens.</p>
+                            <a href="#"
+                                class="bg-primary text-white py-2 px-4 rounded-lg text-center hover:bg-hover max-sm:text-sm mt-auto">Add
+                                To Cart</a>
+                        </div>
+                    </div>
+                    <div class="menu-item rounded-xl border border-gray-border flex flex-col shadow-sm">
+                        <img class="rounded-tl-xl rounded-tr-xl object-cover"
+                            src="../assets/img/our-menu/items/rootmedley.png" alt="roasted root medley" />
+                        <div class="flex flex-col gap-2 p-4 flex-1">
+                            <h3
+                                class="flex justify-between max-sm:text-sm sm:text-sm md:gap-1 md:text-size-base text-hover">
+                                <span>Roasted Root Medley</span>
+                                <span>$21.00</span>
+                            </h3>
+                            <p class="text-sm text-hoverbtn">Seasonal vegetables roasted with fresh
+                                herbs and sea salt.</p>
+                            <a href="#"
+                                class="bg-primary text-white py-2 px-4 rounded-lg text-center hover:bg-hover max-sm:text-sm mt-auto">Add
+                                To Cart</a>
+                        </div>
+                    </div>
+                    <div class="menu-item rounded-xl border border-gray-border flex flex-col shadow-sm">
+                        <img class="rounded-tl-xl rounded-tr-xl object-cover"
+                            src="../assets/img/our-menu/items/salmonbowl.png" alt="salmon bowl" />
+                        <div class="flex flex-col gap-2 p-4 flex-1">
+                            <h3
+                                class="flex justify-between max-sm:text-sm sm:text-sm md:gap-1 md:text-size-base text-hover">
+                                <span>Artisan Beef Tartare</span>
+                                <span>$36.00</span>
+                            </h3>
+                            <p class="text-sm text-hoverbtn">Hand-cut beef tartare with egg yolk and
+                                edible flowers.</p>
+                            <a href="#"
+                                class="bg-primary text-white py-2 px-4 rounded-lg text-center hover:bg-hover max-sm:text-sm mt-auto">Add
+                                To Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="showBtn flex justify-center">
+                    <a
+                        class="text-secondary py-2 px-6 rounded-lg border border-gray-border text-center hover:bg-primary hover:text-white max-sm:text-sm shadow ">Show
+                        More Items</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
 
     </main>
     <footer>
     </footer>
 </body>
+
 </html>
