@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="./assets/css/input.css" rel="stylesheet">
+    <title>simple cart</title>
+</head>
+
+<body>
+    <header class="border-b border-gray-border">
+        <div class="container flex items-center justify-between py-4.5">
+
+            <div class="logo"><a href="./index.html" class="uppercase text-xl text-primary">Taste</a></div>
+
+            <div class="list max-sm:hidden">
+                <ul class="flex justify-center items-center gap-6">
+                    <li>
+                        <a href="./menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Orders</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Account</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon flex items-center gap-4">
+                <a href="#"><img src="./assets/img/header/search.svg" alt="search"></a>
+                <a href="#" class="relative flex gap-1 items-end justify-start pl-2 pr-6 py-2 bg-bg-button rounded-lg">
+                    <img src="./assets/img/our-menu/header-menu/shopping.svg" alt="shopping bag">
+                    <span
+                        class="absolute bg-secondary top-2.5 left-8 text-xs rounded-full w-4 h-4 flex items-center justify-center text-bg-button">0</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <section class="shopping-cart container mb-10 py-12 px-2">
+            <div class="heading-simple-cart flex flex-col gap-2 mb-10">
+                <h1 class="max-sm:text-2xl sm:text-3xl md:text-4xl text-hover">Your Shopping Cart</h1>
+                <p class="max-sm:text-sm  sm:text-size-base text-secondary">Review your items before proceeding to
+                    checkout.</p>
+            </div>
+            <div class="items-carts grid max-sm:grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="order-details max-sm:col-span-1 sm:col-span-2">
+                    <div class="carts flex flex-col">
+                        <div class="cart-details items-stretch flex border-t border-gray-border w-full py-6 gap-2">
+                            <div class="img-cart rounded-lg shrink-0"> <img
+                                    src="./assets/img/simple-cart/vegetables.png" alt="img-cart"
+                                    class="object-cover w-full h-full rounded-lg" />
+                            </div>
+
+                            <div class="details-cart flex flex-col justify-between w-full pl-2 gap-1">
+                                <h4 class="flex items-baseline justify-between text-lg text-hover">Wild Harvest Garden
+                                    Bowl<span>$24.00</span></h4>
+                                <p class="text-dish-details text-sm">Signature Selection</p>
+                                <div class="btn-add flex justify-between items-end">
+                                    <div class="flex items-center w-fit border border-gray-border rounded-lg">
+                                        <button type="button"
+                                            class="px-4 py-2 text-gray-border border-r border-gray-border cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-hover"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" />
+                                            </svg>
+                                        </button>
+
+                                        <span class="px-5 py-2 text-gray-900 font-semibold text-center">01</span>
+
+                                        <button type="button"
+                                            class="px-4 py-2 text-gray-border  border-l border-gray-border cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-hover"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 4v16m8-8H4" />
+                                            </svg> </button>
+                                    </div>
+                                    <span class="remove-btn cursor-pointer text-sm text-dish-details">Remove</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div
+                            class="cart-details items-stretch flex border-t border-b border-gray-border w-full py-6 gap-2">
+                            <div class="img-cart rounded-lg shrink-0"> <img src="./assets/img/simple-cart/meat.png"
+                                    alt="img-cart" class="object-cover w-full h-full rounded-lg" /></div>
+
+                            <div class="details-cart flex flex-col justify-between w-full pl-2 gap-1">
+                                <h4 class="flex items-baseline justify-between text-lg text-hover">48-Hour Braised Short
+                                    Rib<span>$84.00</span></h4>
+                                <p class="text-dish-details text-sm">Chef's Special (Qty: 2)</p>
+                                <div class="btn-add flex justify-between items-end">
+                                    <div class="flex items-center w-fit border border-gray-border rounded-lg">
+                                        <button type="button"
+                                            class="px-4 py-2 text-gray-border border-r border-gray-border cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-hover"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" />
+                                            </svg>
+                                        </button>
+
+                                        <span class="px-5 py-2 text-gray-900 font-semibold text-center">02</span>
+
+                                        <button type="button"
+                                            class="px-4 py-2 text-gray-border  border-l border-gray-border cursor-pointer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-hover"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 4v16m8-8H4" />
+                                            </svg> </button>
+                                    </div>
+                                    <span class="remove-btn cursor-pointer text-sm text-dish-details">Remove</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="w-full mt-6">
+                            <label for="order-note" class="block text-sm font-medium text-secondary mb-2">
+                                Special Instructions
+                            </label>
+
+                            <textarea id="order-note" rows="4"
+                                class="w-full p-3 border border-gray-border rounded-xl shadow-md focus:ring-1 focus:ring-secondary focus:border-secondary outline-none transition-all resize-none text-sm text- placeholder:text-hoverbtn"
+                                placeholder="Add a note to your order..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="Order-summary col-span-1 p-6 border border-gray-border bg-bg-section rounded-xl shadow-sm flex flex-col gap-2 w-full overflow-hidden h-fit">
+                    <div class="heading-summary">
+                        <h4 class="text-xl text-hover">Order Summary</h4>
+                    </div>
+                    <div class="total flex flex-col">
+                        <div
+                            class="subtotal py-4 border-b border-gray-border flex justify-between items-baseline gap-1 flex-wrap">
+                            <span class="text-dish-details text-size-base">Subtotal</span>
+                            <span class="text-hover text-size-base">$108.00</span>
+                        </div>
+                        <div
+                            class="subtotal py-4 border-b border-gray-border flex justify-between items-baseline gap-1 flex-wrap">
+                            <span class="text-dish-details text-size-base">Shipping</span>
+                            <span class="text-hover text-size-base">$12.00</span>
+                        </div>
+                        <div
+                            class="subtotal py-4 border-b border-gray-border flex justify-between items-baseline gap-1 flex-wrap">
+                            <span class="text-dish-details text-size-base">Tax</span>
+                            <span class="text-hover text-size-base">$8.64</span>
+                        </div>
+                        <div class="subtotal py-4 flex justify-between items-baseline gap-1 flex-wrap">
+                            <span class="text-hover text-lg shrink-0">Order Total</span>
+                            <span class="text-hover text-lg">$128.64</span>
+                        </div>
+                    </div>
+                    <div class="checkout-btn ">
+                        <button type="button" class="bg-hover text-white md:text-xs lg:text-size-base rounded-lg sm:p-4 md:py-2 md:px-1 lg:p-4 w-full uppercase">PROCEED TO
+                            CHECKOUT</button>
+                    </div>
+                    <div class="calc-checkout flex justify-center">
+                        <p class="md:text-xs lg:text-sm text-dish-details">Shipping and taxes calculated at checkout.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
