@@ -7,13 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-gray-100: oklch(96.7% 0.003 264.542);
-    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-600: oklch(44.6% 0.03 256.802);
-    --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -231,9 +227,6 @@
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
-  .col-span-2 {
-    grid-column: span 2 / span 2;
-  }
   .container {
     width: 100%;
     @media (width >= 480px) {
@@ -347,9 +340,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-full {
-    max-width: 100%;
   }
   .flex-1 {
     flex: 1;
@@ -933,9 +923,24 @@
       padding: calc(var(--spacing) * 4);
     }
   }
+  .max-sm\:px-2 {
+    @media (width < 480px) {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .max-sm\:px-3 {
+    @media (width < 480px) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
   .max-sm\:px-4 {
     @media (width < 480px) {
       padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .max-sm\:py-1 {
+    @media (width < 480px) {
+      padding-block: calc(var(--spacing) * 1);
     }
   }
   .max-sm\:text-2xl {
@@ -974,9 +979,9 @@
       line-height: var(--tw-leading, var(--text-xs--line-height));
     }
   }
-  .sm\:col-span-1 {
-    @media (width >= 480px) {
-      grid-column: span 1 / span 1;
+  .max-sm\:text-size-base {
+    @media (width < 480px) {
+      font-size: var(--text-size-base);
     }
   }
   .sm\:col-span-2 {
@@ -992,6 +997,16 @@
   .sm\:hidden {
     @media (width >= 480px) {
       display: none;
+    }
+  }
+  .sm\:h-4 {
+    @media (width >= 480px) {
+      height: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:w-4 {
+    @media (width >= 480px) {
+      width: calc(var(--spacing) * 4);
     }
   }
   .sm\:max-w-md {
@@ -1029,6 +1044,21 @@
       padding: calc(var(--spacing) * 4);
     }
   }
+  .sm\:px-4 {
+    @media (width >= 480px) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:px-5 {
+    @media (width >= 480px) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:py-2 {
+    @media (width >= 480px) {
+      padding-block: calc(var(--spacing) * 2);
+    }
+  }
   .sm\:text-2xl {
     @media (width >= 480px) {
       font-size: var(--text-2xl);
@@ -1058,9 +1088,9 @@
       font-size: var(--text-size-base);
     }
   }
-  .md\:col-span-1 {
+  .md\:col-span-2 {
     @media (width >= 48rem) {
-      grid-column: span 1 / span 1;
+      grid-column: span 2 / span 2;
     }
   }
   .md\:block {
