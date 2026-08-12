@@ -301,8 +301,8 @@
             <div class="form-of-book">
                 <form action="#" class="bookForm flex flex-col gap-4">
                     <div class=" flex flex-col gap-0.5">
-                        <label for="full-name" class="text-sm max-sm:text-xs text-secondary">Full Name</label>
-                        <input required type="text" id="full-name" name="full-name" placeholder="Full Name"
+                        <label for="fullName" class="text-sm max-sm:text-xs text-secondary">Full Name</label>
+                        <input required type="text" id="fullName" name="full-name" placeholder="Full Name"
                             class="max-sm:text-sm sm:text-lg border border-gray-border rounded-lg p-2 focus:outline-none focus:ring-1 focus:ring-primary">
                     </div>
                     <div class="input-group flex gap-4 max-sm:flex-col">
@@ -322,14 +322,14 @@
                         <label for="guests" class="text-sm max-sm:text-xs text-secondary">Guests</label>
                         <select id="guests" required
                             class=" max-sm:text-sm sm:text-lg w-full border border-gray-border rounded-lg p-3 text-sm bg-white text-secondary focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
-                            <option value="" disabled selected hidden>1-2 Persons</option>
+                            <option value="1" disabled selected hidden>1-2 Persons</option>
                             <option value="2">2 Persons</option>
                             <option value="3">3 Persons</option>
                             <option value="4">4 Persons</option>
                         </select>
                     </div>
                     <button type="submit"
-                        class="bg-primary max-sm:text-sm sm:text-lg text-white py-2 rounded-lg hover:bg-hover transition-colors duration-300">Confirm
+                        class="btnSubmit bg-primary max-sm:text-sm sm:text-lg text-white py-2 rounded-lg hover:bg-hover transition-colors duration-300">Confirm
                         Reservation</button>
                 </form>
             </div>

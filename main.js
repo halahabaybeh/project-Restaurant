@@ -3,8 +3,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 const logo = document.querySelector(".logo a");
 const scrollSearch = document.querySelectorAll(".scrollSearch");
 const bookForm = document.querySelector(".bookForm");
-console.log(bookForm);
-
+const arrayOfBookForm = [] ; 
 window.addEventListener("scroll", () =>{
 
     if(window.scrollY > 30){
@@ -62,4 +61,16 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+bookForm.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const bookFormData = {
+      fullName : bookForm.fullName.value,
+      date : bookForm.date.value,
+      time : bookForm.time.value,
+      guests : bookForm.guests.value
+    }
 
+    arrayOfBookForm.push(bookFormData);
+    bookForm.reset();
+    console.log(arrayOfBookForm);
+  });
