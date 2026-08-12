@@ -1,9 +1,35 @@
+
 const headertag = document.querySelector(".header-bg");
 const navLinks = document.querySelectorAll(".nav-link");
 const logo = document.querySelector(".logo a");
 const scrollSearch = document.querySelectorAll(".scrollSearch");
 const bookForm = document.querySelector(".bookForm");
 const arrayOfBookForm = [] ; 
+const validate = new JustValidate('.bookForm');
+
+validate.addField('#fullName', [
+    {
+        rule: 'required',
+        errorMessage: 'Full Name is required'
+    }
+]).addField('#date', [
+    {
+        rule: 'required',
+        errorMessage: 'Date is required'
+    }
+]).addField('#time', [
+    {
+        rule: 'required',
+        errorMessage: 'Time is required'
+    }
+]).addField('#guests', [
+    {
+        rule: 'required',
+        errorMessage: 'Number of guests is required'
+    }
+]);
+
+
 window.addEventListener("scroll", () =>{
 
     if(window.scrollY > 30){
@@ -32,7 +58,7 @@ window.addEventListener("scroll", () =>{
 
 const swiper = new Swiper('.swiper', {
   loop: true,
-  spaceBetween: 20, // المسافة بين الكروت
+  spaceBetween: 20, 
 
   autoplay: {
     delay: 2000,
@@ -45,23 +71,22 @@ const swiper = new Swiper('.swiper', {
   
   },
 
-  // التحكم بظهور عدد السلايدات حسب الشاشة
   breakpoints: {
     0: {
       slidesPerView: 1.5, 
-      spaceBetween: 10, // سلايد وجزء من الثاني للموبايل
+      spaceBetween: 10, 
     },
     640: {
-      slidesPerView: 2.2,
-      spaceBetween: 15, // سلايدين وجزء
+      slidesPerView: 2,
+      spaceBetween: 15, 
     },
     1024: {
-      slidesPerView: 3.5, // 3 سلايدات ونص للشاشات الكبيرة
+      slidesPerView: 3, 
     },
   },
 });
 
-bookForm.addEventListener("submit", (e)=>{
+validate.onSuccess((e)=>{
     e.preventDefault();
     const bookFormData = {
       fullName : bookForm.fullName.value,
@@ -72,5 +97,12 @@ bookForm.addEventListener("submit", (e)=>{
 
     arrayOfBookForm.push(bookFormData);
     bookForm.reset();
-    console.log(arrayOfBookForm);
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Your work has been saved",
+        showConfirmButton: false,
+        timer: 1500
+    });
+   console.log(arrayOfBookForm);
   });
