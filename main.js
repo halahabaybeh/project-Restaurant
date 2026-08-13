@@ -106,3 +106,26 @@ validate.onSuccess((e)=>{
     });
    console.log(arrayOfBookForm);
   });
+
+const themeToggle = document.querySelector("#theme-toggle");
+const html = document.documentElement;
+
+function applyTheme(theme) {
+if (theme === "dark")
+    html.classList.add("dark");
+else {
+    html.classList.remove("dark");
+}
+};
+
+themeToggle.addEventListener("click", ()=>{
+
+    const newTheme = html.classList.contains("dark") ? "light" : "dark";
+    localStorage.setItem("theme", newTheme);
+    applyTheme(newTheme);
+})
+
+const savedTheme = localStorage.getItem("theme") || "light";
+applyTheme(savedTheme); 
+
+
