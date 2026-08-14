@@ -13,6 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="./assets/css/output.css" rel="stylesheet">
 
     <title>DASHBOARD</title>
@@ -72,7 +74,7 @@
     </header>
     <section class="hero container min-h-[calc(100vh-70px)] grid grid-cols-2 max-sm:grid-cols-1 items-center py-9">
 
-        <div class=" details-hero flex flex-col gap-4 max-sm:order-2 ">
+        <div class=" details-hero flex flex-col gap-4 max-sm:order-2 " data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
             <p class=" uppercase text-primary text-sm font-inter">University Course Project</p>
             <h2 class="font-inter text-hover text-5xl max-sm:text-3xl">Experience the taste of perfection</h2>
             <p class="font-inter text-secondary text-lg max-sm:text-sm">A curated digital menu featuring the finest
@@ -83,14 +85,14 @@
                 <a href="#" class="btn-secondary max-sm:hidden sm:hidden md:block">Book a Table</a>
             </div>
         </div>
-        <div class="img-hero flex justify-end items-center max-sm:order-1">
+        <div class="img-hero flex justify-end items-center max-sm:order-1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <img src="./assets/img/hero/Gourmetdish.png" alt="img" class=" sm:hidden md:block " />
             <img src="./assets/img/hero/Artisandish.png" alt="img" class="hidden sm:block md:hidden" />
         </div>
 
 
     </section>
-    <section class="Categories-section bg-bg-section py-10">
+    <section  class="Categories-section bg-bg-section py-10">
 
         <div class=" container ">
             <div class="categories-heading flex items-center justify-between mb-6">
@@ -99,7 +101,7 @@
                     class="text-sm max-sm:text-xs text-primary hover:text-hover transition-all duration-300 uppercase md:hidden">View
                     All</a>
             </div>
-            <div class="swiper overflow-visible! ">
+            <div class="swiper overflow-visible! " >
                 <div class="swiper-wrapper w-full pb-12 relative ">
                     <!-- Slides -->
                     <div class="swiper-slide">
@@ -158,7 +160,7 @@
 
         </div>
     </section>
-    <section class="populer-dishes bg-white container py-10">
+    <section  class="populer-dishes bg-white container py-10">
         <div class="dishes flex flex-col max-sm:gap-5 gap-8">
             <div class="heading-dishes flex items-center justify-between">
                 <h3 class="text-2xl max-sm:text-lg text-hover">Popular Dishes</h3>
@@ -168,7 +170,7 @@
             </div>
             <div
                 class="dishes-card grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3  max-sm:gap-4 sm:gap-6 md:gap-8">
-                <div class="card-dish flex flex-col gap-2 border border-gray-border rounded-xl p-4">
+                <div class="card-dish flex flex-col gap-2 border border-gray-border rounded-xl p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="img-card-dish ">
                         <img src="./assets/img/dishes/Risotto.png" alt="risotto"
                             class="rounded-xl w-full object-cover" />
@@ -184,7 +186,7 @@
                             To Order</a>
                     </div>
                 </div>
-                <div class="card-dish flex flex-col gap-2 border border-gray-border rounded-xl p-4">
+                <div class="card-dish flex flex-col gap-2 border border-gray-border rounded-xl p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                     <div class="img-card-dish">
                         <img src="./assets/img/dishes/Pizza.png" alt="pizza" class="rounded-xl w-full object-cover" />
                     </div>
@@ -200,7 +202,7 @@
                             To Order</a>
                     </div>
                 </div>
-                <div class="card-dish flex flex-col gap-2 border border-gray-border rounded-xl p-4 max-sm:hidden">
+                <div class="card-dish flex flex-col gap-2 border border-gray-border rounded-xl p-4 max-sm:hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                     <div class="img-card-dish">
                         <img src="./assets/img/dishes/Tartare.png" alt="tartare"
                             class="rounded-xl w-full object-cover" />
@@ -225,8 +227,9 @@
             </div>
             <div
                 class="review-card grid max-sm:grid-cols-1 sm:grid-cols-2 justify-center items-center max-sm:gap-4 sm:gap-6 md:gap-8 ">
-                <div class="card-review bg-white border border-gray-border rounded-lg p-6 flex flex-col gap-4 h-full">
-                    <div class="stars flex gap-1 text-yellow-400 text-sm">
+                <div class="card-review bg-white border border-gray-border rounded-lg p-6 flex flex-col gap-4 h-full" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="stars flex gap-1 text-yellow-400 text-sm"
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-yellow-400">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -260,7 +263,7 @@
                         <span class="text-[10px] text-gray-400 pb-0.5">2 days ago</span>
                     </div>
                 </div>
-                <div class="card-review bg-white border border-gray-border rounded-lg p-6 flex flex-col gap-4 h-full">
+                <div class="card-review bg-white border border-gray-border rounded-lg p-6 flex flex-col gap-4 h-full" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                     <div class="stars flex gap-1 text-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-yellow-400">
@@ -386,6 +389,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="main.js"></script>
 </body>
 

@@ -132,3 +132,4 @@ menuToggle.addEventListener("click",()=>{
     mobileMenu.classList.toggle("hidden");
 })
 
+  AOS.init();
