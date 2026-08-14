@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link href="./assets/css/output.css" rel="stylesheet">
-   
+
     <title>DASHBOARD</title>
 </head>
 
@@ -22,7 +22,8 @@
     <header class="border-b border-gray-border header-bg sticky top-0 z-10 transition-all duration-300">
         <div class="container flex items-center justify-between py-4.5">
             <div class="menu sm:hidden">
-                <a href="#"><img src="./assets/img/header/menu.svg" alt="menu"></a>
+                <button data-menu-toggle class="text-primary hover:text-hover cursor-pointer "><img
+                        src="./assets/img/header/menu.svg" alt="menu"></button>
             </div>
 
             <div class="logo"><a href="./index.html" class="uppercase text-xl text-primary">Taste</a></div>
@@ -60,8 +61,14 @@
                             d="M160 80c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 384c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48c0-61.9-50.1-112-112-112S112 18.1 112 80l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
                     </svg></a>
             </div>
-        </div>
 
+        </div>
+        <div data-mobile-toggle class=" hidden container flex flex-col gap-4 p-4 shadow-2xl border-2 border-gray-border bg-white " >
+            <a>Menu</a>
+            <a>Wishlist</a>
+            <a>Orders</a>
+            <a>Account</a>
+        </div>
     </header>
     <section class="hero container min-h-[calc(100vh-70px)] grid grid-cols-2 max-sm:grid-cols-1 items-center py-9">
 

@@ -111,11 +111,7 @@ const themeToggle = document.querySelector("#theme-toggle");
 const html = document.documentElement;
 
 function applyTheme(theme) {
-if (theme === "dark")
-    html.classList.add("dark");
-else {
-    html.classList.remove("dark");
-}
+html.classList.toggle("dark", theme === "dark");
 };
 
 themeToggle.addEventListener("click", ()=>{
@@ -128,4 +124,11 @@ themeToggle.addEventListener("click", ()=>{
 const savedTheme = localStorage.getItem("theme") || "light";
 applyTheme(savedTheme); 
 
+const menuToggle = document.querySelector("[data-menu-toggle]");
+const mobileMenu = document.querySelector("[data-mobile-toggle]");
+
+menuToggle.addEventListener("click",()=>{
+
+    mobileMenu.classList.toggle("hidden");
+})
 
